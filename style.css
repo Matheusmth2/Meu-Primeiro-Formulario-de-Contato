@@ -14,11 +14,22 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    border: 2px solid #4CAF50;
 }
 
 h2 {
     margin-bottom: 20px;
     text-align: center;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #4CAF50;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
 }
 
 .form-group {
