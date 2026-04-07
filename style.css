@@ -9,12 +9,51 @@ body {
 
 .container {
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 30px 25px;
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    border: 2px solid #4CAF50;
+    position: relative;
+    margin: 500px auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        #4CAF50,
+        #4CAF50,
+        transparent,
+        transparent,
+        #4CAF50
+    );
+    animation: girarBorda 4s linear infinite;
+    z-index: -1;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #fff;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@keyframes girarBorda {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 h2 {
