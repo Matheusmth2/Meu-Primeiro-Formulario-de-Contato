@@ -4,7 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-image: url('imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -27,13 +30,11 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(
-        #4CAF50,
-        #4CAF50,
-        transparent,
-        transparent,
-        #4CAF50
-    );
+    background: conic-gradient(#4CAF50,
+            #4CAF50,
+            transparent,
+            transparent,
+            #4CAF50);
     animation: girarBorda 4s linear infinite;
     z-index: -1;
 }
@@ -51,6 +52,7 @@ body {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
