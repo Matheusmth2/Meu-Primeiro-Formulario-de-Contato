@@ -30,11 +30,11 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(#4CAF50,
-            #4CAF50,
+    background: conic-gradient(#6a00ff,
+            #6a00ff,
             transparent,
             transparent,
-            #4CAF50);
+            #6a00ff);
     animation: girarBorda 4s linear infinite;
     z-index: -1;
 }
@@ -67,7 +67,7 @@ h2::after {
     content: "";
     width: 50px;
     height: 3px;
-    background: #4CAF50;
+    background: #6a00ff;
     display: block;
     margin: 8px auto 0;
     border-radius: 2px;
@@ -96,7 +96,7 @@ textarea {
 
 button {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #6a00ff;
     color: white;
     padding: 10px;
     border: none;
