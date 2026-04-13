@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 400px;
     position: relative;
-    margin: 500px auto;
+    margin: 50px auto;
     overflow: hidden;
     z-index: 1;
 }
@@ -115,9 +115,14 @@ button:hover {
     background-color: #6a00ff;
 }
 
+button:active {
+    transform: scale(0.98);
+}
+
 .error {
-    color: red;
+    color: #ff4d4d;
     font-size: 12px;
+    display: none;
 }
 
 #formMessage {
